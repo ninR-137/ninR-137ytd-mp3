@@ -4,14 +4,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ninR-137 YTMP3</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<div class="header"><p>Youtube to MP3 Converter</p></div>
+
+	<div style="position: absolute; left: 50%; bottom: 0;">
+
+	    	<div id= "error-message" class = "message" style="position: relative; left: -50%;">
+	    		TEST ERROR
+	    	</div>
+
+  	</div>
+
 	<form action="/" method="POST" >
 		<div>
 			<input type="text" name="ytlink" id="ytlink" placeholder="Place URL here" required>
 			<input type="text" name="vidName" id="vidName" placeholder="Song name" required>
-			<button type="submit">Submit Link</button>
+			<p>Select which format to download:</p>
+			<div>
+				<button value="mp4" name="submit" type="submit">MP4</button>
+				<button value="mp3" name="submit" type="submit">MP3</button>
+			</div>
 		</div>
 	</form>
+
 </body>
 </html>
