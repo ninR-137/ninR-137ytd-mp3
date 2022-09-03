@@ -1,0 +1,87 @@
+body{
+	background-color: #212121;
+	margin: 0;
+}
+#ytlink, #vidName{
+	padding: 8px;
+	border-style: solid;
+	border-color: #adadad;
+	width: 500px;
+	outline: none;
+	margin: 8px;
+	transition: all 0.25s;
+}
+
+#ytlink:focus, #vidName:focus {
+	border-color: blue;
+}
+
+.header{
+	background-color: rgb(204, 0, 0);
+	margin: 0 0 20px 0;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header p{
+	font-weight: bold;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+
+.message{
+	background-color: darkred;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	padding: 8px 80px 8px 80px;
+	opacity: 0;
+	transition: all 0.15s;
+}
+
+
+
+form div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form div div{
+	display: flex;
+	flex-direction: row;
+}
+
+form div p{
+	color: white;
+	font-family: Arial;
+	font-size: 12px;
+	display: block;
+	font-weight: 700;
+}
+
+form div button{
+	margin: 20px;
+	padding: 8px 20px;
+	background-color: rgb(204, 0, 0);
+	border-style: none;
+	color: white;
+	font-family: Arial;
+	font-size: 12px;
+	white-space: nowrap;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: all 0.15s;
+}
+
+
+form div button:active{
+	opacity: 0.6;
+}
